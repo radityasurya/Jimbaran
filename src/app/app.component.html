@@ -1,8 +1,36 @@
-<div class="ui ordered list">
-    <a class="item" [routerLink]="['/']">Home</a>
-    <a class="item" [routerLink]="['/work']">Work</a>
-    <a class="item" [routerLink]="['/contact']">Contact</a>
+<nav class="nav">
+    <div class="nav__container">
+        <div class="nav__list">
+            <div class="nav__item">
+                <a [routerLink]="['/']" class="nav__link nav__link--logo">
+                    <span class="nav__logo">R</span>
+                </a>
+            </div>
+            <div class="nav__item">
+                <a [routerLink]="['/about']" class="nav__link">
+                    <span class="nav__icon">
+                    <img class=nav__icon__img src="assets/img/people.png">
+                </span></a>
+            </div>
+            <div class="nav__item">
+                <a [routerLink]="['/work']" class="nav__link">
+                    <span class="nav__icon">
+
+                    <img class=nav__icon__img src="assets/img/resume.png">
+                                                </span>
+                </a>
+            </div>
+            <div class="nav__item">
+                <a [routerLink]="['/contact']" class="nav__link">
+                    <span class="nav__icon">
+<img class=nav__icon__img src="assets/img/mail.png">
+                </span></a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- PANELS -->
+<div class="panels fade out">
+    <router-outlet></router-outlet>
 </div>
-
-
-<router-outlet></router-outlet>

@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WorkComponent implements OnInit {
 
-  constructor() { }
+  isCompleted: boolean = false;
+
+  constructor() { this.complete(); }
 
   ngOnInit() {
+  }
+  complete() {
+    setTimeout(() => {
+      this.isCompleted = true;
+    }, 500);
   }
 
 }

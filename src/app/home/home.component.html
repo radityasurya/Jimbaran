@@ -1,19 +1,11 @@
-<div class="ui card">
-    <div class="image">
-        <img src="http://semantic-ui.com/images/avatar2/large/kristy.png">
+<div class="home">
+    <sm-loader [complete]="isCompleted" class="inverted" text="Loading..."></sm-loader>
+
+
+    <div class="intro-text">
+
+        <h1 class="title">Hi I'm <a [routerLink]="['/about']" class="subtitle-link">Radit</a> — designer &amp; coder</h1>
+        <h2 class="subtitle">I love creating useful and beautiful things for people<br>see my latest <a [routerLink]="['/work']" class="subtitle-link">work</a></h2>
     </div>
-    <div class="content">
-        <a class="header">Kristy</a>
-        <div class="meta">
-            <span class="date">Joined in 2013</span>
-        </div>
-        <div class="description">
-            Kristy is an art director living in New York.
-        </div>
-    </div>
-    <div class="extra content">
-        <a>
-            <i class="user icon"></i> 22 Friends
-        </a>
-    </div>
+
 </div>

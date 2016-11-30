@@ -10,12 +10,16 @@ import { AppRoutes } from './app.routes';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { WorkComponent } from './work/work.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    WorkComponent
+    WorkComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
